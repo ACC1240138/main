@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: "."
 
 website:
   title: "FONDECYT R-1240138"

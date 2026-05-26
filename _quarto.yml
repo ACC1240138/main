@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "FONDECYT R-1240138"
+  description: "A system approach to alcohol policy evaluation: using microsimulation to model the effect of policy changes on alcohol use and related harm"
+  navbar:
+    left:
+      - text: "Home"
+        file: index.qmd
+    right:
+      - text: "GitHub"
+        href: https://github.com/FONDECYTACC
+      - text: "FONDECYT"
+        href: https://www.fondecyt.cl/
+  
+  page-footer:
+    center: |
+      FONDECYT Regular R-1240138 · 2024–2028
+  
+  repo-url: https://github.com/FONDECYTACC
+  repo-actions: [source]
+
+format:
+  html:
+    theme: none
+    mainfont: "Georgia, 'Times New Roman', serif"
+    toc: false
+    number-sections: false
+    html-math-method: katex
+    css: styles.css
+

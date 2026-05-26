@@ -1,0 +1,177 @@
+---
+title: ""
+description: "A system approach to alcohol policy evaluation: using microsimulation to model the effect of policy changes on alcohol use and related harm"
+format: 
+  html:
+    css: styles.css
+    toc: false
+    html-math-method: katex
+---
+
+:::{.page-container}
+
+::: {.title-block}
+:::{.project-label}
+FONDECYT Regular · R-1240138
+:::
+
+# A system approach to alcohol policy evaluation
+
+:::{.subtitle}
+Using microsimulation to model the effect of policy changes on alcohol use and related harm
+:::
+
+:::{.date-range}
+26 February 2024 — 31 March 2028
+:::
+
+::: {.byline}
+
+:::{.byline-author}
+:::{.byline-role}
+Principal Investigator
+:::
+:::{.byline-name}
+Álvaro Castillo-Carniglia [ORCID](https://orcid.org/0000-0002-3016-890X){.orcid-icon}
+:::
+:::{.byline-affiliation}
+Full Professor, Department of Public Health, Facultad de Medicina y Ciencia, Universidad San Sebastián, Chile.
+:::
+:::{.byline-links}
+[✉ alvacasti@gmail.com](mailto:alvacasti@gmail.com) 
+:::
+:::
+
+:::{.byline-author}
+:::{.byline-role}
+Co-Investigator
+:::
+:::{.byline-name}
+Cristóbal Cuadrado Nahum [ORCID](https://orcid.org/0000-0002-0174-5958){.orcid-icon}
+:::
+:::{.byline-affiliation}
+Associate Professor, Escuela de Salud Pública, Universidad de Chile.
+:::
+:::{.byline-links}
+[✉ ccuadrado@uchile.cl](mailto:ccuadrado@uchile.cl)
+:::
+:::
+
+:::{.byline-author}
+:::{.byline-role}
+Collaborator
+:::
+:::{.byline-name}
+José Antonio Ruiz-Tagle Maturana [ORCID](https://orcid.org/0000-0002-4866-5701){.orcid-icon}
+:::
+:::{.byline-affiliation}
+Teacher at Duoc UC Professional Institute Foundation, Santiago, Chile; Director of Postgraduate Program in Data Science for the Social Sciences, Universidad Diego Portales.
+:::
+:::{.byline-links}
+[ORCID](https://orcid.org/0000-0002-4866-5701)
+:::
+:::
+
+:::{.byline-author}
+:::{.byline-role}
+Research Assistant
+:::
+:::{.byline-name}
+Andrés González-Santa Cruz [ORCID](https://orcid.org/0000-0002-5166-9121){.orcid-icon}
+:::
+:::{.byline-affiliation}
+Public Health PhD student, Universidad de Chile.
+:::
+:::{.byline-links}
+[✉ gonzalez.santacruz.andres@gmail.com](mailto:gonzalez.santacruz.andres@gmail.com)
+:::
+:::
+
+:::
+:::
+
+## Publications
+
+:::{.publication-list}
+
+:::{.publication-item}
+:::{.pub-status .published}
+Published
+:::
+
+:::{.pub-authors}
+Ruiz-Tagle Maturana, J., Román Mella, F., & Castillo-Carniglia, Á.
+:::
+
+:::{.pub-title}
+Sex and age differences in alcohol-attributable mortality in Chile between 2008 and 2022
+:::
+
+:::{.pub-journal}
+Public Health in Practice, 11, 100798.
+:::
+
+:::{.pub-details}
+2026. [https://doi.org/10.1016/j.puhip.2026.100798](https://doi.org/10.1016/j.puhip.2026.100798)
+:::
+
+:::{.pub-links}
+[Journal](https://doi.org/10.1016/j.puhip.2026.100798) · [Repository](https://github.com/ACC1240138/Sex-and-age-differences-in-alcohol-attributable-mortality-in-Chile-between-2008-and-2022)
+:::
+:::
+
+:::{.publication-item}
+:::{.pub-status .submitted}
+Submitted
+:::
+
+:::{.pub-authors}
+Ruiz-Tagle Maturana, J., Purshouse, R. C., & Castillo-Carniglia, Á.
+:::
+
+:::{.pub-title}
+Potentially avoidable injury mortality and years of potential life lost through reduction of heavy episodic drinking in Chile
+:::
+
+:::{.pub-journal}
+Addiction.
+:::
+
+:::{.pub-details}
+Manuscript submitted for publication. 2025.
+:::
+
+:::{.pub-links}
+[Repository](https://github.com/ACC1240138/Potentially-Avoidable-Injury-Mortality-in-Chile-)
+:::
+:::
+
+:::
+
+## Work in Progress
+
+:::{.project-card}
+:::{.project-title}
+Microsimulation modeling of alcohol policy in Chile
+:::
+
+:::{.project-description}
+This repository contains the core analytical work of the FONDECYT project. It includes R scripts for data preparation, mortality trend analysis, and estimation of population-attributable fractions (PAF) and potential impact fractions (PIF) for alcohol-related harms in Chile. The work focuses on developing a microsimulation model to evaluate the effect of policy changes on alcohol use and related harm across different population subgroups.
+:::
+
+:::{.project-status}
+In Development
+:::
+
+:::{.project-links}
+[GitHub Repository](https://github.com/ACC1240138/FONDECYT-REGULAR-)
+:::
+:::
+
+:::{.footer-content}
+FONDECYT Regular R-1240138 · Agencia Nacional de Investigación y Desarrollo (ANID), Chile
+
+26 February 2024 – 31 March 2028
+:::
+
+:::

@@ -1,0 +1,396 @@
+/* =============================================
+   FONDECYT R-1240138 — Academic Project Page
+   Sober, elegant design inspired by Distill
+   ============================================= */
+
+/* ---------- Base Styles ---------- */
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #555555;
+  --color-text-muted: #888888;
+  --color-accent: #2c5f8a;
+  --color-accent-light: #e8f0f8;
+  --color-border: #e0e0e0;
+  --color-hr: #d0d0d0;
+  --color-card-bg: #fafafa;
+  --color-link: #2c5f8a;
+  --color-link-hover: #1a3f5c;
+  --max-width: 840px;
+  --spacing-unit: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--color-text);
+  line-height: 1.7;
+  font-size: 17px;
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Page Container ---------- */
+
+.page-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* ---------- Typography ---------- */
+
+h1, h2, h3, h4 {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--color-border);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+}
+
+small {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* ---------- Header / Title Block ---------- */
+
+.title-block {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-hr);
+}
+
+.title-block .project-label {
+  display: inline-block;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  background: var(--color-accent-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.title-block h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.title-block .subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.title-block .date-range {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+}
+
+/* ---------- ORCID Icon ---------- */
+
+a.orcid-icon {
+  text-decoration: none;
+}
+
+a.orcid-icon::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' rx='48' fill='%23A6CE39'/%3E%3Cpath d='M86.5 74.5h24v107h-24zM74.5 74.5h-24v107h24z' fill='%23fff'/%3E%3Cpath d='M161.5 185.5c-28.5 0-51.5-23-51.5-51.5s23-51.5 51.5-51.5 51.5 23 51.5 51.5-23 51.5-51.5 51.5zm0-88c-20.2 0-36.5 16.3-36.5 36.5s16.3 36.5 36.5 36.5 36.5-16.3 36.5-36.5-16.3-36.5-36.5-36.5z' fill='%23fff'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ---------- Byline (subtle author list) ---------- */
+
+.byline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-hr);
+}
+
+.byline-author {
+  line-height: 1.5;
+}
+
+.byline-author .byline-role {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: 0.1rem;
+}
+
+.byline-author .byline-name {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.1rem;
+}
+
+.byline-author .byline-affiliation {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin-bottom: 0.15rem;
+}
+
+.byline-author .byline-links {
+  font-size: 0.78rem;
+}
+
+.byline-author .byline-links a {
+  margin-right: 0.75rem;
+}
+
+/* ---------- Publications Section ---------- */
+
+.publication-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publication-item {
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-card-bg);
+  border-radius: 0 6px 6px 0;
+  transition: background 0.15s ease;
+}
+
+.publication-item:hover {
+  background: #f5f8fc;
+}
+
+.publication-item .pub-authors {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+.publication-item .pub-title {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+
+.publication-item .pub-journal {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.publication-item .pub-details {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.publication-item .pub-links {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+.publication-item .pub-links a {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  margin-right: 1rem;
+}
+
+.publication-item .pub-status {
+  display: inline-block;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  background: #fff3cd;
+  color: #856404;
+  margin-top: 0.25rem;
+}
+
+.publication-item .pub-status.published {
+  background: #d4edda;
+  color: #155724;
+}
+
+.publication-item .pub-status.submitted {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* ---------- In Progress Section ---------- */
+
+.project-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.15s ease;
+}
+
+.project-card:hover {
+  border-color: #bbb;
+}
+
+.project-card .project-title {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-card .project-description {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.project-card .project-status {
+  display: inline-block;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  background: #e2e3f1;
+  color: #4a4a8a;
+}
+
+.project-card .project-links {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+/* ---------- HR ---------- */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-hr);
+  margin: 2.5rem 0;
+}
+
+/* ---------- Footer ---------- */
+
+.footer-content {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (min-width: 640px) {
+  .byline {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 1.7rem;
+  }
+  
+  .title-block h1 {
+    font-size: 1.6rem;
+  }
+  
+  .byline {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-container {
+    padding: 1.5rem 1rem 3rem;
+  }
+}
+
+/* ---------- Utility ---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  hei

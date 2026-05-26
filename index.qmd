@@ -164,7 +164,9 @@ In Development
 :::
 
 :::{.project-links}
-[GitHub Repository](https://github.com/ACC1240138/FONDECYT-REGULAR-)
+- [GitHub Repository](https://github.com/ACC1240138/)
+
+- [Proposal (PDF)](Proposal Fondecyt 1240138.pdf)
 :::
 :::
 
